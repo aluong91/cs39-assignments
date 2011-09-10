@@ -1,0 +1,246 @@
+This repo contains my assignments for my C# programming class. Below are the
+assignment prompts.
+
+Prompts:
+
+Assignment String Input Output Summary: Grabbing a string from the user,
+printing a string, and the system time.  Print your name.  Print the current
+date and time (as it is at run time.) Ask the user for their name.  Print "Hello
+{username}, I'm {yourname}. It is nice to meet  you." Example execution: Glenn
+Cuevas 9/1/2010 2:33 PM What is your name? Jimmy Hello Jimmy, I'm Glenn. It is
+nice to meet you.
+
+Assignment Loops and Randoms Summary: Decisions and iteration, random numbers.
+Create a coin flipping game.  Ask the user if they want to play the game. If
+they respond postively, then ask them to guess heads or tails. If they correctly
+guess the coin flip indicate that they won the game and then ask them if they
+want to play again. The game will continue until the user responds that they do
+not wish to continue playing.  Keep track of each time the player guesses
+correctly or incorrectly and display their wins and losses. Also note that the
+user input is not case sensitive.  Example Execution: Wins: 0 Loses: 0 Do you
+want to play? y Guess H for heads, T for tails: t The coin landed heads, you
+lose.  Wins: 0 Loses: 1 Do you want to play? y Guess H for heads, T for tails: T
+The coin landed tails, you win.  Wins: 1 Loses: 1 Do you want to play? n
+Goodbye.
+
+Assignment Variables Summary: Arithmatic, variables and arrays.  Ask the user
+for 10 numbers (which might be floating point.) Find the average value, the
+median value and the sum.  Print the numbers entered back to the user, followed
+by the average, median and sum.  The average is the sum divided by the count of
+the numbers, the median is the value that occurs in the middle, since we have 10
+numbers, that will be the 5th number.  Example Execution: Enter number 1: 22.1
+Enter number 2: 4 Enter number 3: 41 Enter number 4: 14 Enter number 5: 24.2
+Enter number 6: 19 Enter number 7: 25 Enter number 8: 46 Enter number 9: 79
+Enter number 10: 9 You entered 22.1, 4, 41, 14, 24.2, 19, 25, 46, 79, 9.  The
+average is 28.33.  The median is 22.1.  The sum is 283.3.
+
+Assignment Loops Summary: Loops for factorials.
+
+Write a program that finds the factorial for a given sequence of integers.  Ask
+the user for the starting value, then ask the user for the ending value.
+
+Starting at the first number entered, display the factorial calculation and the
+result of the calculation on a line. Do this for each value from the first
+number to the last number entered. The factorial of a number n is = n * (n-1) *
+(n-2) * (n-3) ... * 1. Where the factorial of 0 is equal to 1. IE 5! = 5*4*3*2*1
+= 120
+
+Sample Execution:
+
+Welcome to the factorial calculator Enter the lower bound: 4 Enter the upper
+bound: 7
+
+Calculating...  4! = 4 * 3 * 2 * 1 = 24 5! = 5 * 4 * 3 * 2 * 1 = 120 6! = 6 * 5
+* 4 * 3 * 2 * 1 = 720 7! = 7 * 6 * 5 * 4 * 3 * 2 * 1 = 5040
+
+Goodbye.
+
+Assignment Methods Summary: Methods, overloading, optional parameters.  Write a
+program that will analyze text.  Write a function that will take a string
+parameter with "Hello" as the default value for the optional parameter, this
+function will count the number of words in the string. Assume that a word is
+identified by a single space character. The return is the count of words.
+Overload the above function by allowing it to take an array of strings. (There
+must be two seperate functions.) Write a function that will count the number of
+vowels in a string. The return is the count of vowels, case-insensitive.  Create
+a menu system similar to the sample output. When at the bottom of each menu
+level, continue to perform the same operation until the user inputs the escape
+sequence. i.e. -1 Example run: Main Menu Choose from the following: 1. Word
+counting.  2. Vowel counting.  3. Exit Enter your selection: 1
+
+Word Counter Menu Choose from the following: 1. Count the words in one sentence.
+2. Count the words in a paragraph.  3. Parent menu Enter your selection: 1 Enter
+a sentence (q to quit): Hello world, how are you today?  There are 6 words in
+that sentence.  Enter a sentence (q to quit): I'm bored today.  There are 3
+words in that sentence.  Enter a sentence (q to quit): q Word Counter Menu
+Choose from the following: 1. Count the words in one sentence.  2. Count the
+words in a paragraph.  3. Parent menu Enter your selection: 2 Enter several
+sentences, when done entering sentences, use q by itself on the last line.
+Hello, how are you?  I'm fine, and you?  Just fine, just fine.  q There are 12
+words in that text.  Enter several sentences, when done entering sentences, use
+q by itself on the last line.  q Word Counter Menu Choose from the following: 1.
+Count the words in one sentence.  2. Count the words in a paragraph.  3. Parent
+menu Enter your selection: 3 Main Menu Choose from the following: 1. Word
+counting.  2. Vowel counting.  3. Exit Enter your selection: 2 Vowel Counting
+Menu Choose from the following: 1. Count vowels.  2. Parent menu.  Enter your
+selection: 1 Please enter some text to count the vowels (q to quit). Hello Abe,
+what are you up to today?  There are 13 vowels.  Please enter some text to count
+the vowels (q to quit). q Vowel Counting Menu Choose from the following: 1.
+Count vowels.  2. Parent menu.  Enter your selection: 2 Main Menu Choose from
+the following: 1. Word counting.  2. Vowel counting.  3. Exit Enter your
+selection: 3 Goodbye.
+
+Assignment Forms Summary: Forms
+
+Create a calculator, using calc, as available in windows, as the model.  The
+calculator needs to support the following mathmatical operations.  Addition
+Subtraction Multiplication Division Modulo (Remainder) Square Root
+
+The interface needs to also support Clear (C) and Clear Entry (CE) buttons, the
+clear button restores the text back to zero. The clear entry will clear the
+current entry and retain the previous calculated value.
+
+The text box should be formatted with the thousands comma separator, ie:
+123,456,789.2
+
+The calculation scenarios supported are entering a sequnce of numbers (through
+the buttons, or typing), then choosing an operator, then another sequence of
+numbers, followed by the equal sign, or another operator, when this occurs, the
+result of the previous operation is evaluated. I.E. the user enters 1, hits the
++, then 2, then +, the text would be updated to 3, then 3, then *, where it will
+be come 6, then they enter 5 and hit equals, resulting in 30.
+
+Assignment Forms and Classes Attached Files:	User Registration Screen
+Shot.gif (10.289 KB) Summary: Forms and Classes, Enumerations
+
+Create a user registration system.
+
+It will need to contain the fields as shown in the screen shot.  The password
+and confirm password fields need to be matched against each other, both when the
+page is submitted and also when the confirm password field has lost focus, also,
+when the password field has lost focus. If the form is not valid then the page
+will not be processed as described below.
+
+The major is a combo box (DropDownList style) that will contain a list of majors
+(at least 5) of your choosing. Based upon the major selected you'll populate the
+items in the specialty drop down list below the major, for the user to select
+from those items.
+
+Once the form is succesfully submitted we'll use the values in the form to
+create a user object.
+
+The user object will be composed of private data members plus properties, all
+the fields will be strings, with the exception of the major, which will be an
+enumeration.
+
+The clear button will reset the form to its initial empty state.  The load last
+button will repopulate the form with the last user object that was created, if
+no user object has been created, show a MessageBox with an error message
+indicating there is no data to load.
+
+Dice Rolling Attached Files:	Dice Rolling.PNG (47.006 KB) Summary: Dice
+Rolling, Forms, Menus, AI
+
+This is a two player game, each player takes turns rolling a single six sided
+die.  If the roll is a 1, the players turn is over and the turn passes.  If the
+roll is 2 - 6, the player addes the value of the die to the turn total.  After
+adding the die to the turn total, the player can then choose to roll again, or
+take the turn total and add it to their game score.  If they roll again, repeat
+the check above, ending the turn on a 1 (no scoring), or adding the points
+otherwise, if they take the points, play passes to the next player.
+
+A rough mock-up is attached and shows about what the game would look like.
+
+The game needs to support a menu with the following options.  Exit - Closes the
+form.  New Game - Resets the game to the beginning.
+
+A players menu with Set player 1 name, set player 2 name, and set number of
+players. The number of players can be 1 or 2.
+
+In a two player game, to human players will play against each other.  In a one
+player game, the AI will play for the second player, the behavior of the AI is
+to roll until their turn ends on a 1, or their turn total is 20 or more.
+
+When the AI is playing, the game needs to pause for a couple of seconds between
+roles so that the human player can see what is happening.
+
+The game ends at 100, when the game ends, show a message box that indicates the
+player that won.
+
+Assignment Tic Tac Toe Summary: Tic Tac Toe - Form
+
+Create a two player tic tac toe game.  The game requires a menu allowing for the
+game to: exit for the game to be reset to change which player goes first which
+player is X or O setting of the player's names.
+
+When the game is over, show a message box indicating the winner. Following that,
+show a prompt box asking if they want to play again, if they play again use the
+following to determine who goes first.
+
+When a player wins, they get to go first again on the second game by default. If
+the first player loses, the second player goes first on the next game, if the
+game is a draw, then switch who went first on the second game.
+
+Blackjack Summary: Blackjack
+
+Create a black jack application that is designed to help the player learn the
+odds of playing the game.
+
+The game will allow the user to specify how many decks of cards will be used.
+The game needs to support all the actions that a game of black jack allows for,
+such as doubling down, splitting, hitting, standing.
+
+The basic idea for the player is to get as close to 21 points as possible
+without exceeding 21 points, and have a higher number of points than the dealer.
+The cards are A 2 through 10, Jack, Queen and King. 2 - 10 are worth 2 - 10
+points respectively, Jack, Queen and King are worth 10 points. Ace can be used
+as either 1 or 11 points. 
+
+A black jack is having two cards, one of which is an Ace, the other a 10 point
+value card. A black jack is an automatic win for the player, unless the dealer
+also has a black jack. In this scenario, the player wins 1.5 times their bet.
+
+Hitting causes the player/dealer to get another card.  Standing indicates the
+player/dealer will not take any more cards this hand.  Splitting is the action
+of creating two hands from a single hand when the first two cars of the hand are
+the same face value, ie two eights, or two jacks, but not a ten and a queen.
+Doubling down is the act of doubling the player's bet after they have received
+their first two cards, in this scenario, the player only gets to hit one time,
+allowing them 3 total cards.
+
+The player loses when their hand's point value exceeds 21, they also lose if
+after they finish taking cards, the dealer has more points than the player, not
+to exceed 21. If both the dealer and player have the same number of points, the
+hand is a draw. When the dealer is taking cards, they hit until they have 17 or
+points. The dealer will hit on a soft 17, where they are using an Ace as 11
+points.
+
+For showing the odds, based upon the current point value of the player's hand,
+what the chances are of the player busting if they draw a card. For example, if
+the player has a 7 and an 8, and the dealer is showing a 10, then any card with
+a value larger than 7 will cause the player to lose. We'll assume the deck is
+full, with the exception of the shown cards, so normally there are 16 cards at
+10 points, 4 each at 9, 8, and 7. For a total of 28 cards and 52 cards in the
+deck, that would give the player a 53.8% chance of busting, with a 7, 8 and 10
+gone, that changes it to 25/49, down to a 51.0% chance of busting.
+
+Optional: Show the odds of the dealer busting. Use a counting system to track
+cards used and how that changes the odds.
+
+Tic Tac Toe w/ AI Summary: AI
+
+Add an AI to the tic tac toe game, which brings in the ability to play with one
+human player.  The AI will support several difficulty levels.
+
+Each level builds on top of the previous levels, thus, if the added behavior
+does not apply, then they would choose randomly.  Level 1 - AI will randomly
+choose their next move.  Level 2 - AI will block the player if their next move
+would win the game.  Level 3 - AI will recognize a winning move and will try to
+win the game.  Level 4 - AI places higher value on corner and center spots, only
+taking sides to win/block.  Level 5 - AI is impossible to beat.
+
+
+When developing the AI, it is good to recognize that there are many mirror
+cases, for example, choosing any of the 4 corner spots for the first move are
+identical. When this is the case, to make the games appear to be different, it
+is good to randomize which of these moves gets used in subsequent games.
