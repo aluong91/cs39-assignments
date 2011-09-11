@@ -1,0 +1,5 @@
+C:\Users\mluong7\Documents\Visual Studio 2010\Projects\cs39-03-assignmentvariables\cs39-03-assignmentvariables\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\mluong7\Documents\Visual Studio 2010\Projects\cs39-03-assignmentvariables\cs39-03-assignmentvariables\bin\Debug\cs39-03-assignmentvariables.exe
+C:\Users\mluong7\Documents\Visual Studio 2010\Projects\cs39-03-assignmentvariables\cs39-03-assignmentvariables\bin\Debug\cs39-03-assignmentvariables.pdb
+C:\Users\mluong7\Documents\Visual Studio 2010\Projects\cs39-03-assignmentvariables\cs39-03-assignmentvariables\obj\x86\Debug\cs39-03-assignmentvariables.exe
+C:\Users\mluong7\Documents\Visual Studio 2010\Projects\cs39-03-assignmentvariables\cs39-03-assignmentvariables\obj\x86\Debug\cs39-03-assignmentvariables.pdb

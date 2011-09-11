@@ -1,0 +1,5 @@
+D:\dev\vs2010\cs-39-methods\cs-39-methods\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\dev\vs2010\cs-39-methods\cs-39-methods\bin\Debug\cs-39-methods.exe
+D:\dev\vs2010\cs-39-methods\cs-39-methods\bin\Debug\cs-39-methods.pdb
+D:\dev\vs2010\cs-39-methods\cs-39-methods\obj\x86\Debug\cs-39-methods.exe
+D:\dev\vs2010\cs-39-methods\cs-39-methods\obj\x86\Debug\cs-39-methods.pdb
