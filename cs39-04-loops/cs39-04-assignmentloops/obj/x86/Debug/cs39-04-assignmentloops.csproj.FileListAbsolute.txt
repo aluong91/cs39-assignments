@@ -3,3 +3,5 @@ D:\dev\vs2010\cs39-04-assignmentloops\cs39-04-assignmentloops\bin\Debug\cs39-04-
 D:\dev\vs2010\cs39-04-assignmentloops\cs39-04-assignmentloops\bin\Debug\cs39-04-assignmentloops.pdb
 D:\dev\vs2010\cs39-04-assignmentloops\cs39-04-assignmentloops\obj\x86\Debug\cs39-04-assignmentloops.exe
 D:\dev\vs2010\cs39-04-assignmentloops\cs39-04-assignmentloops\obj\x86\Debug\cs39-04-assignmentloops.pdb
+D:\dev\git\cs-39\cs39-04-loops\cs39-04-assignmentloops\obj\x86\Debug\cs39-04-assignmentloops.exe
+D:\dev\git\cs-39\cs39-04-loops\cs39-04-assignmentloops\obj\x86\Debug\cs39-04-assignmentloops.pdb
