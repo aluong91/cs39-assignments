@@ -1,0 +1,64 @@
+
+1. Word counting
+2. Vowel counting
+3. Exit
+Enter selection: 1
+
+1. Count the words in one sentence
+2. Count the words in one paragraph
+3. Exit
+Enter selection: 1
+Enter a sentence:
+I like cakes
+3
+
+1. Word counting
+2. Vowel counting
+3. Exit
+Enter selection: 1
+
+1. Count the words in one sentence
+2. Count the words in one paragraph
+3. Exit
+Enter selection: 2
+Enter a paragraph (q to quit):
+I like cakes
+But I do not like pies
+Pies are bad
+q
+12
+
+1. Word counting
+2. Vowel counting
+3. Exit
+Enter selection: 2
+
+1. Count the vowels in one sentence
+2. Count the vowels in one paragraph
+3. Exit
+Enter selection: 1
+Enter a sentence:
+I like cakes
+4
+
+1. Word counting
+2. Vowel counting
+3. Exit
+Enter selection: 2
+
+1. Count the vowels in one sentence
+2. Count the vowels in one paragraph
+3. Exit
+Enter selection: 2
+Enter a paragraph (q to quit):
+I like cakes
+But I do not like pies
+Pies are bad
+q
+16
+
+1. Word counting
+2. Vowel counting
+3. Exit
+Enter selection: 3
+
