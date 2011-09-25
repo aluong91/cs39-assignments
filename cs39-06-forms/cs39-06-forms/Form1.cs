@@ -29,12 +29,6 @@ namespace cs39_06_forms
 			shouldOverwrite = true;
 		}
 
-		private void decimalButton_Click(object sender, EventArgs e)
-		{
-			if (!textBox.Text.Contains('.'))
-				textBox.Text += '.';
-		}
-
 		private void textBox_TextChanged(object sender, EventArgs e)
 		{
 		}

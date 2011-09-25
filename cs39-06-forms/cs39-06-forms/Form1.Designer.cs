@@ -261,7 +261,7 @@
 			this.decimalButton.TabIndex = 19;
 			this.decimalButton.Text = ".";
 			this.decimalButton.UseVisualStyleBackColor = true;
-			this.decimalButton.Click += new System.EventHandler(this.decimalButton_Click);
+			this.decimalButton.Click += new System.EventHandler(this.numberButton_Click);
 			// 
 			// Form1
 			// 
