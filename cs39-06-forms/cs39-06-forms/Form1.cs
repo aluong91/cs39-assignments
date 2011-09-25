@@ -37,7 +37,6 @@ namespace cs39_06_forms
 
 		private void textBox_TextChanged(object sender, EventArgs e)
 		{
-
 		}
 
 		private void numberButton_Click(object sender, EventArgs e)
@@ -97,6 +96,7 @@ namespace cs39_06_forms
 		{
 			double.TryParse(textBox.Text, out operand);
 			textBox.Text = Math.Sqrt(operand).ToString();
+			addSeperators();
 		}
 
 		private void equalsButton_Click(object sender, EventArgs e)
@@ -131,7 +131,16 @@ namespace cs39_06_forms
 					break;
 			}
 
+			addSeperators();
 			mode = (int)op.equals;
+		}
+
+		private void addSeperators()
+		{
+			// String.Format() won't add seperators to a string, we need to convert to a double first
+			double number;
+			double.TryParse(textBox.Text, out number);
+			textBox.Text = String.Format("{0:n}", number);
 		}
 
 		private void clearEntryButton_Click(object sender, EventArgs e)
@@ -139,14 +148,48 @@ namespace cs39_06_forms
 			textBox.Text = "0";
 		}
 
-		private void Form1_KeyDown(object sender, KeyEventArgs e)
+		private void textBox_KeyPress(object sender, KeyPressEventArgs e)
 		{
-			Keys key = (Keys)sender;
-			switch (key.ToString()) {
-				case "k":
-					evaluate();
-					break;
+			e.Handled = true;
+		}
+
+		private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (e.KeyChar >= '0' && e.KeyChar <= '9')	{
+				Control[] found = this.Controls.Find("button" + e.KeyChar, false);
+				if (found.Length > 0) {
+					Button button = (Button)found[0];
+					button.PerformClick();
+				}
+			} else {
+				switch (e.KeyChar) {
+					case '+':
+						addButton.PerformClick();
+						break;
+					case '-':
+						subtractButton.PerformClick();
+						break;
+					case '*':
+						multiplyButton.PerformClick();
+						break;
+					case '/':
+						divideButton.PerformClick();
+						break;
+					case '%':
+						moduloButton.PerformClick();
+						break;
+					case '.':
+						decimalButton.PerformClick();
+						break;
+					case (char)Keys.Return:
+						equalsButton.PerformClick();
+						break;
+					case (char)Keys.Escape:
+						clearButton.PerformClick();
+						break;
+				}
 			}
 		}
+
 	}
 }
