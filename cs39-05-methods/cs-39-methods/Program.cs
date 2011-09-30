@@ -80,7 +80,7 @@ namespace cs_39_methods
 		static int countVowels(string input)
 		{
 			// similar to countWords(), but split if it contains a vowel
-			return System.Text.RegularExpressions.Regex.Split(input, "[aeiou]").Length - 1;
+			return System.Text.RegularExpressions.Regex.Split(input, "[AaEeIiOoUu]").Length - 1;
 		}
 
 		static string ReadParagraph()
