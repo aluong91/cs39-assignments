@@ -1,0 +1,9 @@
+D:\dev\git\cs39-assignments\cs39-08-dicerolling\cs39-dicerolling\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\dev\git\cs39-assignments\cs39-08-dicerolling\cs39-dicerolling\obj\x86\Debug\cs39_dicerolling.RollTheDice.resources
+D:\dev\git\cs39-assignments\cs39-08-dicerolling\cs39-dicerolling\obj\x86\Debug\cs39_dicerolling.Properties.Resources.resources
+D:\dev\git\cs39-assignments\cs39-08-dicerolling\cs39-dicerolling\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\dev\git\cs39-assignments\cs39-08-dicerolling\cs39-dicerolling\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\dev\git\cs39-assignments\cs39-08-dicerolling\cs39-dicerolling\bin\Debug\cs39-dicerolling.exe
+D:\dev\git\cs39-assignments\cs39-08-dicerolling\cs39-dicerolling\bin\Debug\cs39-dicerolling.pdb
+D:\dev\git\cs39-assignments\cs39-08-dicerolling\cs39-dicerolling\obj\x86\Debug\cs39-dicerolling.exe
+D:\dev\git\cs39-assignments\cs39-08-dicerolling\cs39-dicerolling\obj\x86\Debug\cs39-dicerolling.pdb
