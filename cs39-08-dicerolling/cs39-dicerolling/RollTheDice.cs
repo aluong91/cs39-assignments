@@ -111,8 +111,7 @@ namespace cs39_dicerolling
 
 		private void playerNameBox_TextChanged(object sender, EventArgs e)
 		{
-			player1Name = player1NameBox.Text;
-			player2Name = player2NameBox.Text;
+			SetPlayerNames();
 			UpdateScoreboard();
 		}
 
