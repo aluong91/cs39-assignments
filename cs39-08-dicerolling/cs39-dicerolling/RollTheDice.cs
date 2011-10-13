@@ -54,6 +54,7 @@ namespace cs39_dicerolling
 			player2Score.Text = Player2Score.ToString();
 
 			if (Player1Score >= maxScore || Player2Score >= maxScore) {
+				timer1.Enabled = false;
 				MessageBox.Show(currentPlayerBox.Text + " has won the game");
 				NewGame();
 			}
@@ -62,7 +63,6 @@ namespace cs39_dicerolling
 				currentPlayerBox.Text = player1Name;
 			else
 				currentPlayerBox.Text = player2Name;
-
 
 			if (game.CurrentPlayer == 2 && isFacingAI)
 				StartAI();
@@ -109,6 +109,13 @@ namespace cs39_dicerolling
 			isFacingAI = false;
 		}
 
+		private void playerNameBox_TextChanged(object sender, EventArgs e)
+		{
+			player1Name = player1NameBox.Text;
+			player2Name = player2NameBox.Text;
+			UpdateScoreboard();
+		}
+
 		private Game game;
 		private AI opponent;
 
@@ -117,12 +124,5 @@ namespace cs39_dicerolling
 
 		private bool isFacingAI = true;
 		private int maxScore = 100;
-
-		private void playerNameBox_TextChanged(object sender, EventArgs e)
-		{
-			player1Name = player1NameBox.Text;
-			player2Name = player2NameBox.Text;
-			UpdateScoreboard();
-		}
 	}
 }
