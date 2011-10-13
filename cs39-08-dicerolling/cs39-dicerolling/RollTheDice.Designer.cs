@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+			this.components = new System.ComponentModel.Container();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.player1Score = new System.Windows.Forms.Label();
@@ -44,6 +45,7 @@
 			this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.newGameToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.groupBox1.SuspendLayout();
 			this.currentPlayerBox.SuspendLayout();
 			this.menuStrip1.SuspendLayout();
@@ -110,7 +112,6 @@
 			this.currentPlayerBox.TabIndex = 6;
 			this.currentPlayerBox.TabStop = false;
 			this.currentPlayerBox.Text = "Player 1";
-			this.currentPlayerBox.TextChanged += new System.EventHandler(this.currentPlayerBox_TextChanged);
 			// 
 			// turnScore
 			// 
@@ -190,22 +191,27 @@
 			// newGameToolStripMenuItem1
 			// 
 			this.newGameToolStripMenuItem1.Name = "newGameToolStripMenuItem1";
-			this.newGameToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+			this.newGameToolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
 			this.newGameToolStripMenuItem1.Text = "New Game";
 			this.newGameToolStripMenuItem1.Click += new System.EventHandler(this.newGameToolStripMenuItem1_Click);
 			// 
 			// exitToolStripMenuItem
 			// 
 			this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-			this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.exitToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
 			this.exitToolStripMenuItem.Text = "Exit";
 			this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+			// 
+			// timer1
+			// 
+			this.timer1.Interval = 400;
+			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
 			// RollTheDice
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(258, 262);
+			this.ClientSize = new System.Drawing.Size(258, 222);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.currentPlayerBox);
@@ -242,6 +248,7 @@
 		private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem1;
 		private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+		private System.Windows.Forms.Timer timer1;
     }
 }
 

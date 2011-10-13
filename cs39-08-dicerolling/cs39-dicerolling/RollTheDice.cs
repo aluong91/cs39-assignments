@@ -21,6 +21,7 @@ namespace cs39_dicerolling
 		{
 			Callback cb = new Callback(this.UpdateScoreboard);
 			game = new Game(cb);
+			UpdateScoreboard();
 
 			DialogResult result = MessageBox.Show("Play against an AI opponent?", "Use AI", MessageBoxButtons.YesNo);
 			if (result == DialogResult.Yes) {
@@ -28,7 +29,6 @@ namespace cs39_dicerolling
 				opponent = new AI(game);
 			} else
 				isFacingAI = false;
-			UpdateScoreboard();
 		}
 
 		private void button1_Click(object sender, EventArgs e)
@@ -41,6 +41,7 @@ namespace cs39_dicerolling
 			game.Stand();
 		}
 
+		// this gets called after every game move
 		private void UpdateScoreboard()
 		{
 			rolledValue.Text = game.Dice.Value.ToString();
@@ -52,11 +53,29 @@ namespace cs39_dicerolling
 			player2Score.Text = Player2Score.ToString();
 
 			if (Player1Score >= maxScore || Player2Score >= maxScore) {
-				MessageBox.Show("Player " + game.CurrentPlayer + " has won the game");
+				MessageBox.Show(currentPlayerBox.Text + " has won the game");
 				NewGame();
 			}
-
 			currentPlayerBox.Text = "Player " + game.CurrentPlayer;
+
+			if (currentPlayerBox.Text == "Player 2" && isFacingAI)
+				StartAI();
+			else
+				StopAI();
+		}
+
+		private void StopAI()
+		{
+			timer1.Enabled = false;
+			button1.Enabled = true;
+			button2.Enabled = true;
+		}
+
+		private void StartAI()
+		{
+			timer1.Enabled = true;
+			button1.Enabled = false;
+			button2.Enabled = false;
 		}
 
 		private void newGameToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -66,13 +85,12 @@ namespace cs39_dicerolling
 
 		private void exitToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			this.Close();
+			Application.Exit();
 		}
 
-		private void currentPlayerBox_TextChanged(object sender, EventArgs e)
+		private void timer1_Tick(object sender, EventArgs e)
 		{
-			if (currentPlayerBox.Text == "Player 2" && isFacingAI)
-				opponent.Go();
+			opponent.Go();
 		}
 
 		private Game game;
