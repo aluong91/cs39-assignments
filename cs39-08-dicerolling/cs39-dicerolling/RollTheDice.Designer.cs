@@ -45,6 +45,14 @@
 			this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.newGameToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.setToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.numberOfPlayersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+			this.player1NameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.player1NameBox = new System.Windows.Forms.ToolStripTextBox();
+			this.player2NameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.player2NameBox = new System.Windows.Forms.ToolStripTextBox();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.groupBox1.SuspendLayout();
 			this.currentPlayerBox.SuspendLayout();
@@ -172,7 +180,8 @@
 			// menuStrip1
 			// 
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newGameToolStripMenuItem});
+            this.newGameToolStripMenuItem,
+            this.setToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
 			this.menuStrip1.Size = new System.Drawing.Size(258, 24);
@@ -201,6 +210,69 @@
 			this.exitToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
 			this.exitToolStripMenuItem.Text = "Exit";
 			this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+			// 
+			// setToolStripMenuItem
+			// 
+			this.setToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.numberOfPlayersToolStripMenuItem,
+            this.player1NameToolStripMenuItem,
+            this.player2NameToolStripMenuItem});
+			this.setToolStripMenuItem.Name = "setToolStripMenuItem";
+			this.setToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+			this.setToolStripMenuItem.Text = "Players";
+			// 
+			// numberOfPlayersToolStripMenuItem
+			// 
+			this.numberOfPlayersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3});
+			this.numberOfPlayersToolStripMenuItem.Name = "numberOfPlayersToolStripMenuItem";
+			this.numberOfPlayersToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+			this.numberOfPlayersToolStripMenuItem.Text = "Number of Players";
+			// 
+			// toolStripMenuItem2
+			// 
+			this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+			this.toolStripMenuItem2.Size = new System.Drawing.Size(80, 22);
+			this.toolStripMenuItem2.Text = "1";
+			this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+			// 
+			// toolStripMenuItem3
+			// 
+			this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+			this.toolStripMenuItem3.Size = new System.Drawing.Size(80, 22);
+			this.toolStripMenuItem3.Text = "2";
+			this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
+			// 
+			// player1NameToolStripMenuItem
+			// 
+			this.player1NameToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.player1NameBox});
+			this.player1NameToolStripMenuItem.Name = "player1NameToolStripMenuItem";
+			this.player1NameToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+			this.player1NameToolStripMenuItem.Text = "Player 1 Name";
+			// 
+			// player1NameBox
+			// 
+			this.player1NameBox.Name = "player1NameBox";
+			this.player1NameBox.Size = new System.Drawing.Size(100, 23);
+			this.player1NameBox.Text = "Player 1";
+			this.player1NameBox.TextChanged += new System.EventHandler(this.playerNameBox_TextChanged);
+			// 
+			// player2NameToolStripMenuItem
+			// 
+			this.player2NameToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.player2NameBox});
+			this.player2NameToolStripMenuItem.Name = "player2NameToolStripMenuItem";
+			this.player2NameToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+			this.player2NameToolStripMenuItem.Text = "Player 2 Name";
+			// 
+			// player2NameBox
+			// 
+			this.player2NameBox.Name = "player2NameBox";
+			this.player2NameBox.Size = new System.Drawing.Size(100, 23);
+			this.player2NameBox.Text = "Player 2";
+			this.player2NameBox.TextChanged += new System.EventHandler(this.playerNameBox_TextChanged);
 			// 
 			// timer1
 			// 
@@ -249,6 +321,14 @@
 		private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem1;
 		private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
 		private System.Windows.Forms.Timer timer1;
+		private System.Windows.Forms.ToolStripMenuItem setToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem numberOfPlayersToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+		private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+		private System.Windows.Forms.ToolStripMenuItem player1NameToolStripMenuItem;
+		private System.Windows.Forms.ToolStripTextBox player1NameBox;
+		private System.Windows.Forms.ToolStripMenuItem player2NameToolStripMenuItem;
+		private System.Windows.Forms.ToolStripTextBox player2NameBox;
     }
 }
 

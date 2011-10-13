@@ -14,21 +14,22 @@ namespace cs39_dicerolling
 		public RollTheDice()
 		{
 			InitializeComponent();
+			SetPlayerNames();
 			NewGame();
+		}
+
+		private void SetPlayerNames()
+		{
+			player1Name = player1NameBox.Text;
+			player2Name = player2NameBox.Text;
 		}
 
 		private void NewGame()
 		{
 			Callback cb = new Callback(this.UpdateScoreboard);
 			game = new Game(cb);
+			opponent = new AI(game);
 			UpdateScoreboard();
-
-			DialogResult result = MessageBox.Show("Play against an AI opponent?", "Use AI", MessageBoxButtons.YesNo);
-			if (result == DialogResult.Yes) {
-				isFacingAI = true;
-				opponent = new AI(game);
-			} else
-				isFacingAI = false;
 		}
 
 		private void button1_Click(object sender, EventArgs e)
@@ -56,9 +57,14 @@ namespace cs39_dicerolling
 				MessageBox.Show(currentPlayerBox.Text + " has won the game");
 				NewGame();
 			}
-			currentPlayerBox.Text = "Player " + game.CurrentPlayer;
 
-			if (currentPlayerBox.Text == "Player 2" && isFacingAI)
+			if (game.CurrentPlayer == 1)
+				currentPlayerBox.Text = player1Name;
+			else
+				currentPlayerBox.Text = player2Name;
+
+
+			if (game.CurrentPlayer == 2 && isFacingAI)
 				StartAI();
 			else
 				StopAI();
@@ -93,9 +99,30 @@ namespace cs39_dicerolling
 			opponent.Go();
 		}
 
+		private void toolStripMenuItem2_Click(object sender, EventArgs e)
+		{
+			isFacingAI = true;
+		}
+
+		private void toolStripMenuItem3_Click(object sender, EventArgs e)
+		{
+			isFacingAI = false;
+		}
+
 		private Game game;
-		private int maxScore = 100;
-		private bool isFacingAI;
 		private AI opponent;
+
+		private string player1Name;
+		private string player2Name;
+
+		private bool isFacingAI = true;
+		private int maxScore = 100;
+
+		private void playerNameBox_TextChanged(object sender, EventArgs e)
+		{
+			player1Name = player1NameBox.Text;
+			player2Name = player2NameBox.Text;
+			UpdateScoreboard();
+		}
 	}
 }
