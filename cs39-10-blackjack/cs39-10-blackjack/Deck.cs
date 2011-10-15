@@ -7,14 +7,15 @@ namespace cs39_10_blackjack
 {
 	class Deck
 	{
-		public Deck(int size = 1)
+		public Deck(int size = 1, bool shouldShuffle = true)
 		{
 			// fill the deck with each type of card
 			for (int i = 0; i < size; i++)
 				foreach (Face face in Enum.GetValues(typeof(Face)))
 					foreach (Suit suit in Enum.GetValues(typeof(Suit)))
 						cards.Add(new Card(face,suit));
-			//Shuffle();
+			if (shouldShuffle)
+				Shuffle();
 		}
 
 		public void Shuffle()

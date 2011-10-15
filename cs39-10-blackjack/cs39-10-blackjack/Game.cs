@@ -29,8 +29,8 @@ namespace cs39_10_blackjack
 					CurrentPlayer.Draw();
 					playerEnumerator.MoveNext();
 				}
-			playerEnumerator.Reset();
-			playerEnumerator.MoveNext();
+				playerEnumerator.Reset();
+				playerEnumerator.MoveNext();
 			}
 		}
 
@@ -48,7 +48,8 @@ namespace cs39_10_blackjack
 		{
 			playerEnumerator.MoveNext();
 
-			// if we reached the end of the list, it's now the dealer's turn
+			// if we reached the end of the list, all the players have went
+			// and it's now the dealer's turn
 			if (CurrentPlayer == null) {
 				playerEnumerator.Reset();
 				playerEnumerator.MoveNext();

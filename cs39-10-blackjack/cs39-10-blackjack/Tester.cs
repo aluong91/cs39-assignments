@@ -10,7 +10,7 @@ namespace cs39_10_blackjack
 		public Tester()
 		{
 			#region shuffling
-			Deck deck = new Deck(2);
+			Deck deck = new Deck(2, false);
 			System.Console.WriteLine("The deck contains:");
 			System.Console.WriteLine(deck.ToString());
 			deck.Shuffle();
@@ -18,11 +18,13 @@ namespace cs39_10_blackjack
 			System.Console.WriteLine(deck.ToString());
 			#endregion
 
-			#region dealing
+			#region dealing & hand values
 			const int NumPlayers = 4;
 			Game game = new Game(4, NumPlayers);
-			for (int i = 0; i < NumPlayers; ++i) {
+			for (int i = 0; i < NumPlayers + 1; ++i) {			// +1 because NumPlayers doesn't include dealer
+				game.CurrentPlayer.Draw();
 				System.Console.WriteLine("Player " + i + "\'s Hand");
+				System.Console.WriteLine("Points: " + game.CurrentPlayer.Points);
 				System.Console.WriteLine(game.CurrentPlayer.ToString());
 				game.CurrentPlayer.Stand();
 			}

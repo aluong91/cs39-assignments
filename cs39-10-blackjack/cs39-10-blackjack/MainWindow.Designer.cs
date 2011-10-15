@@ -47,7 +47,7 @@
 			this.ClientSize = new System.Drawing.Size(284, 262);
 			this.Controls.Add(this.textBox1);
 			this.Name = "MainWindow";
-			this.Text = "MainWindow";
+			this.Text = "Blackjack for Dummies";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
