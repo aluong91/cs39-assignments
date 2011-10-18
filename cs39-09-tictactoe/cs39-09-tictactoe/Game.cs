@@ -7,10 +7,10 @@ namespace cs39_09_tictactoe
 {
 	class Game
 	{
-		public Game()
+		public Game(int first)
 		{
+			CurrentPlayer = first;
 			Board = new int[3,3];
-			CurrentPlayer = 1;
 			HasWinner = false;
 		}
 
@@ -26,46 +26,27 @@ namespace cs39_09_tictactoe
 
 		private void CheckWinner()
 		{
-			bool isSame;
-			int first, current;
-
-			// traverse each row for a winnner
-			for (int i = 0; i < Board.GetLength(0); i++)
-			{
-				isSame = true;
-				first = Board[i, 0];
-				for (int j = 1; j < Board.GetLength(1); j++)
-				{
-					current = Board[i, j];
-					if (first != current)
-						isSame = false;
-				}
-				if (isSame == true)
-					HasWinner = true;
-			}
-
-			// traverse each column for a winnner
-			for (int i = 0; i < Board.GetLength(0); i++)
-			{
-				isSame = true;
-				first = Board[0, i];
-				for (int j = 1; j < Board.GetLength(1); j++)
-				{
-					current = Board[j, i];
-					if (first != current)
-						isSame = false;
-				}
-				if (isSame == true)
-					HasWinner = true;
-			}
-
-			// check diagonals
-			if (Board[0, 0] == Board[1, 1] && Board[1, 1] == Board[2, 2]
-				|| Board[2, 0] == Board[1, 1] && Board[1, 1] == Board[0, 2])
+			#region rows
+			if ((Board[0, 0] != 0 && Board[0, 0] == Board[0, 1] && Board[0, 0] == Board[0, 2])
+				|| (Board[1, 0] != 0 && Board[1, 0] == Board[1, 1] && Board[1, 0] == Board[1, 2])
+				|| (Board[2, 0] != 0 && Board[2, 0] == Board[2, 1] && Board[2, 0] == Board[2, 2]))
 				HasWinner = true;
+			#endregion
 
-			if (!HasWinner)
-				NextPlayer();
+			#region columns
+			if ((Board[0, 0] != 0 && Board[0, 0] == Board[1, 0] && Board[0, 0] == Board[2, 0])
+				|| (Board[0, 1] != 0 && Board[0, 1] == Board[1, 1] && Board[0, 1] == Board[2, 1])
+				|| (Board[0, 2] != 0 && Board[0, 2] == Board[1, 2] && Board[0, 2] == Board[2, 2]))
+				HasWinner = true;
+			#endregion
+
+			#region corners
+			if ((Board[0, 0] != 0 && Board[0, 0] == Board[1, 1] && Board[0, 0] == Board[2, 2])
+				|| (Board[2, 0] != 0 && Board[2, 0] == Board[1, 1] && Board[2, 0] == Board[0, 2]))
+				HasWinner = true;
+			#endregion
+
+			NextPlayer();
 		}
 
 		private void NextPlayer()
