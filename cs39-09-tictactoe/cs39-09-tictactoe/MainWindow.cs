@@ -107,6 +107,11 @@ namespace cs39_09_tictactoe
 				firstPlayer = 2;
 		}
 
+		private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
+
 		private Game game;
 		private char player1Shape, player2Shape;
 		private string player1Name, player2Name;
