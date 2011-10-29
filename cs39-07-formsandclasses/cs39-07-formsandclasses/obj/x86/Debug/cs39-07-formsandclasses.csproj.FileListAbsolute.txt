@@ -16,3 +16,5 @@ D:\dev\git\cs-39\cs39-07-formsandclasses\cs39-07-formsandclasses\obj\x86\Debug\G
 D:\dev\git\cs-39\cs39-07-formsandclasses\cs39-07-formsandclasses\obj\x86\Debug\GenerateResource.write.1.tlog
 D:\dev\git\cs-39\cs39-07-formsandclasses\cs39-07-formsandclasses\bin\Debug\cs39-07-formsandclasses.exe
 D:\dev\git\cs-39\cs39-07-formsandclasses\cs39-07-formsandclasses\bin\Debug\cs39-07-formsandclasses.pdb
+D:\dev\git\cs39-assignments\cs39-07-formsandclasses\cs39-07-formsandclasses\obj\x86\Debug\cs39-07-formsandclasses.exe
+D:\dev\git\cs39-assignments\cs39-07-formsandclasses\cs39-07-formsandclasses\obj\x86\Debug\cs39-07-formsandclasses.pdb

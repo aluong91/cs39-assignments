@@ -1,0 +1,49 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace cs39_10_blackjack
+{
+	class Deck
+	{
+		public Deck(int size = 1)
+		{
+			for (int i = 0; i < size; i++)
+				foreach (Face face in Enum.GetValues(typeof(Face)))
+					foreach (Suit suit in Enum.GetValues(typeof(Suit)))
+						cards.Add(new Card(face,suit));
+		}
+
+		public void Shuffle()
+		{
+			// randomly select cards from the original deck and then put them into temp
+			// then use temp as the new shuffled deck
+			List<Card> temp = new List<Card>();
+			Random rand = new Random();
+			int count = cards.Count;
+
+			while (count > 0) {
+				int index = rand.Next(count);
+				temp.Add(cards[index]);
+				cards.RemoveAt(index);
+				count = cards.Count;
+			}
+
+			cards = temp;
+		}
+
+		// for testing
+		public override string ToString()
+		{
+			string result = String.Empty;
+			foreach (Card card in cards)
+			{
+				result += card.Face.ToString() + ' ' + card.Suit.ToString() + Environment.NewLine;
+			}
+			return result;
+		}
+
+		private List<Card> cards = new List<Card>();
+	}
+}
