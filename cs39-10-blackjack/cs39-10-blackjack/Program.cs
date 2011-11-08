@@ -13,9 +13,14 @@ namespace cs39_10_blackjack
 		[STAThread]
 		static void Main()
 		{
+			AllocConsole();
+			new Tester();
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
 			Application.Run(new MainWindow());
 		}
+
+		[System.Runtime.InteropServices.DllImport("kernel32.dll")]
+		private static extern bool AllocConsole();
 	}
 }

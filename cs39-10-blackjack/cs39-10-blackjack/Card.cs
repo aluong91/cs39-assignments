@@ -16,10 +16,10 @@ namespace cs39_10_blackjack
 		Eight,
 		Nine,
 		Ten,
-		Jack = 10,
-		Queen = 10,
-		King = 10,
-		Ace = 11
+		Jack,
+		Queen,
+		King,
+		Ace
 	}
 
 	enum Suit
