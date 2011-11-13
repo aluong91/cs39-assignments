@@ -1,5 +1,0 @@
-D:\dev\vs2010\cs39-string\cs39-string\bin\Debug\cs39-string.exe
-D:\dev\vs2010\cs39-string\cs39-string\bin\Debug\cs39-string.pdb
-D:\dev\vs2010\cs39-string\cs39-string\obj\x86\Debug\ResolveAssemblyReference.cache
-D:\dev\vs2010\cs39-string\cs39-string\obj\x86\Debug\cs39-string.exe
-D:\dev\vs2010\cs39-string\cs39-string\obj\x86\Debug\cs39-string.pdb
